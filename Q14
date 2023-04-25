@@ -1,0 +1,6 @@
+numero = input("Digite uma lista de números separados por espaço: ").split()
+numero = [int(num) for num in numero]
+
+num_ordenados = sorted(numero, reverse=True)
+
+print(f"A lista em ordem decrescente é: {num_ordenados}")
