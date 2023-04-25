@@ -1,0 +1,10 @@
+numero = input("Digite uma lista de números separados por espaço: ").split()
+numero = [int(num) for num in numero]
+
+pares = []
+
+for num in numero:
+    if num % 2 == 0:
+        pares.append(num)
+
+print(f"Os números pares da lista são: {pares}")
