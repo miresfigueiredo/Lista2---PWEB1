@@ -1,0 +1,14 @@
+numero = input("Digite uma lista de números separados por espaço: ").split()
+numero = [int(num) for num in numero]
+
+maior = numero[0]
+menor = numero[0]
+
+for num in numero:
+    if num > maior:
+        maior = num
+    elif num < menor:
+        menor = num
+
+print(f"O maior número é: {maior}")
+print(f"O menor número é: {menor}")
